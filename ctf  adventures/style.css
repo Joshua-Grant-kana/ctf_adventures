@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 8vh;
+    right: 0px;
+    height: 92vh;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2em;
+  border: none;
+  cursor: pointer;
+}
+
+.left {
+  left: 2%;
+}
+
+.right {
+  right: 2%;
+}
+
+
+section.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+a.cta {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#faq {
+  margin-bottom: 50px;
+}
+
+#faq h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#faq dl {
+  margin: 0;
+  padding: 0;
+}
+
+#faq dt {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#faq dd {
+  margin-bottom: 20px;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
